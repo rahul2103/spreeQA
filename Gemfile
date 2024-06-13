@@ -65,3 +65,12 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem 'spree', '~> 4.8' # core and API
+gem 'spree_backend', '~> 4.8' # Admin panel (optional)
+gem 'spree_frontend', '~> 4.8' # Storefront (optional)
+gem 'spree_emails', '~> 4.8' # transactional emails (optional)
+gem 'spree_sample', '~> 4.8' # dummy data like products, taxons, etc (optional)
+gem 'spree_auth_devise', '~> 4.6' # Devise integration (optional)
+gem 'spree_gateway', '~> 3.11' # payment gateways eg. Stripe, Braintree (optional)
+
