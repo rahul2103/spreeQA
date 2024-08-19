@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_13_165691) do
+ActiveRecord::Schema[7.1].define(version: 2024_08_19_070254) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -961,8 +961,10 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_13_165691) do
     t.bigint "reimbursement_id"
     t.jsonb "public_metadata"
     t.jsonb "private_metadata"
+    t.bigint "refunder_id"
     t.index ["payment_id"], name: "index_spree_refunds_on_payment_id"
     t.index ["refund_reason_id"], name: "index_refunds_on_refund_reason_id"
+    t.index ["refunder_id"], name: "index_spree_refunds_on_refunder_id"
     t.index ["reimbursement_id"], name: "index_spree_refunds_on_reimbursement_id"
   end
 
@@ -1207,9 +1209,11 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_13_165691) do
     t.boolean "backorderable_default", default: false
     t.boolean "propagate_all_variants", default: false
     t.string "admin_name"
+    t.datetime "deleted_at", precision: nil
     t.index ["active"], name: "index_spree_stock_locations_on_active"
     t.index ["backorderable_default"], name: "index_spree_stock_locations_on_backorderable_default"
     t.index ["country_id"], name: "index_spree_stock_locations_on_country_id"
+    t.index ["deleted_at"], name: "index_spree_stock_locations_on_deleted_at"
     t.index ["propagate_all_variants"], name: "index_spree_stock_locations_on_propagate_all_variants"
     t.index ["state_id"], name: "index_spree_stock_locations_on_state_id"
   end
