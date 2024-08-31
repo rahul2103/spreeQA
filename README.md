@@ -1,4 +1,4 @@
-# Spree 4.8
+# SpreeQA
 
 
 ## Prerequisites
