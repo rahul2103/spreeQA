@@ -3,7 +3,7 @@ source "https://rubygems.org"
 ruby "3.3.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.1.3", ">= 7.1.3.4"
+gem 'rails', '~> 7.2', '>= 7.2.1'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -68,7 +68,7 @@ end
 
 gem 'spree', '~> 4.10.0' # core and API
 gem 'spree_backend', '~> 4.8.4' # Admin panel (optional)
-gem 'spree_frontend', '~> 4.8.0' # Storefront (optional)
+# gem 'spree_frontend', '~> 4.8.0' # Storefront (optional)
 gem 'spree_emails', '~> 4.10.1' # transactional emails (optional)
 gem 'spree_sample', '~> 4.10.1' # dummy data like products, taxons, etc (optional)
 gem 'spree_auth_devise', '~> 4.6.3' # Devise integration (optional)
