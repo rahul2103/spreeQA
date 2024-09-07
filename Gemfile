@@ -66,10 +66,10 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem 'spree', '~> 4.9.0' # core and API
+gem 'spree', '~> 4.10.0' # core and API
 gem 'spree_backend', '~> 4.8.4' # Admin panel (optional)
-gem 'spree_frontend', '~> 4.8' # Storefront (optional)
-gem 'spree_emails', '~> 4.9' # transactional emails (optional)
-gem 'spree_sample', '~> 4.9' # dummy data like products, taxons, etc (optional)
-gem 'spree_auth_devise', '~> 4.6' # Devise integration (optional)
-gem 'spree_gateway', '~> 3.11' # payment gateways eg. Stripe, Braintree (optional)
+gem 'spree_frontend', '~> 4.8.0' # Storefront (optional)
+gem 'spree_emails', '~> 4.10.1' # transactional emails (optional)
+gem 'spree_sample', '~> 4.10.1' # dummy data like products, taxons, etc (optional)
+gem 'spree_auth_devise', '~> 4.6.3' # Devise integration (optional)
+gem 'spree_gateway', '~> 3.11.1' # payment gateways eg. Stripe, Braintree (optional)
