@@ -14,7 +14,7 @@ Before you begin, make sure you have the following prerequisites installed on yo
 1. **Clone the project** using the provided URL:
 
    ```bash
-   git clone https://github.com/AasPass-Marketplace/spree480.git
+   git clone https://github.com/rahul2103/spreeQA.git
    ```
 
 2. **Install the required gems** using Bundler:
