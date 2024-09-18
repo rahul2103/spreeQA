@@ -66,7 +66,7 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem 'spree', '~> 4.10.0' # core and API
+gem 'spree', '~> 4.10.1' # core and API
 gem 'spree_backend', '~> 4.8.4' # Admin panel (optional)
 # gem 'spree_frontend', '~> 4.8.0' # Storefront (optional)
 gem 'spree_emails', '~> 4.10.1' # transactional emails (optional)
